@@ -1,0 +1,140 @@
+
+/********************************************
+ _layout.scss 
+ *******************************************/
+/* header nav */
+.header{
+  &.open{
+    .wrap_snb{
+      right: 0;
+    }
+    .dimmed{
+      background-color: rgba(0,0,0,0.7);
+    }
+  }
+}
+.header_nav{
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  .logo_main{
+    height: 50px;
+    width: 112px;
+    margin-left: 20px;
+    background: url(assets/img/logo_main.png) no-repeat left top;
+    background-size: 100% auto;
+  }
+  .btn_menu{
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    background: url(assets/img/btn_menu.svg) no-repeat center center;
+  }
+  .btn_gift{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-left: auto;
+    background: url(assets/img/btn_gift.svg) no-repeat center center;
+  }
+}
+.dimmed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  transition: all 1s;
+  z-index: 100;
+}
+.wrap_snb{
+  position: fixed;
+  right: -290px;
+  top: 0;
+  width: 290px;
+  height: 100%;
+  background: #fff;
+  z-index: 101;
+  transition: right 2s;
+  .snb{
+    margin-top: 9px;
+    padding: 13px 15px;
+    border-top: 1px solid rgba(0,0,0,.04);
+    li a{
+      display: block;
+      padding: 12px 10px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 400;
+      border-bottom: 1px solid #eff1f4;
+    }
+  }
+  .wrap_copy{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+    background: #f7f7f7;
+    box-sizing: border-box;
+  }
+  .copy{
+    font-size: 12px;
+    color: #999;
+  }
+  .btn_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+}
+.profile{
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  -webkit-box-align: center;
+  .thumb{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    &::after{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75px;
+      height: 75px;
+      background: url(http://localhost:8081/img/profile_mask.d758fb4a.svg) center center/ 100% 100%;
+      z-index: 1;
+      content: "";
+    }
+  }
+  .info{
+    padding-left: 12px;
+  }
+  .txt_email{
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7f7f7f;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+/* gnb */
+#app {
+}
+.gnb{
+  background: #ffa409;
+  padding: 15px;
+}
+.gnb a{
+  color: #fff;
+  padding: 10px;
+}

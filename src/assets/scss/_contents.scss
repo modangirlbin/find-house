@@ -1,0 +1,61 @@
+.box_sort{
+  padding-left: 15px;
+  .btn{
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 9px 3px;
+    color: #ffa409;
+    border: 2px solid #ffa409;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 11px;
+  }
+}
+.list_cards{
+  padding: 0 18px;
+  .card{
+    position: relative;
+    &.sale .tit_card::after{
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      padding: 0px 9px 2px;
+      font-size: 13px;
+      border-radius: 8px;
+      color: #fff;
+      background: #ffa409;
+      content: "급매";
+    }
+  }
+  .img_card{
+    padding-top: 55%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    .img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+.info_card{
+  padding: 10px 0 20px;
+  .tit_card{
+    font-size: 16px;
+    color: #433;
+  }
+  .cont_card{
+    font-size: 14px;
+    color: #555;
+    padding-top: 7px;
+    line-height: 20px;
+  }
+  .txt_price{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #795d2e;
+  }
+}

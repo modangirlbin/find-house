@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>profile_mask56</title>
+    <desc>Created with Sketch.</desc>
+    <g id="profile_mask56" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-img-/-img_profile_default-1">
+            <g id="Group">
+                <path d="M0,0 L152,0 L152,152 L0,152 L0,0 Z M76,132 C117.223,132 132,117.223 132,76 C132,34.778 117.223,20 76,20 C34.778,20 20,36.333 20,76 C20,117.223 34.778,132 76,132 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M76,131.5 C116.946858,131.5 131.5,116.946858 131.5,76 C131.5,35.0537452 116.94646,20.5 76,20.5 C35.6585419,20.5 20.5,35.9915766 20.5,76 C20.5,116.94646 35.0537452,131.5 76,131.5 Z" id="border" stroke-opacity="0.1" stroke="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>
