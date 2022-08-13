@@ -11,5 +11,6 @@ module.exports = defineConfig({
         }
     }
   },
-  publicPath: '/find-house'
+  publicPath: '/find-house',
+  outputDir: 'docs'
 })
