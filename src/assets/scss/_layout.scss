@@ -18,6 +18,7 @@
   height: 72px;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
   .logo_main{
     height: 50px;
     width: 112px;
@@ -88,9 +89,11 @@
   }
   .btn_close{
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
+    top: 12px;
+    right: 11px;
+    width: 20px;
+    height: 20px;
+    background: url(assets/img/btn_close.svg) no-repeat center center/ 10px;
   }
 }
 .profile{
@@ -109,7 +112,7 @@
       left: 0;
       width: 75px;
       height: 75px;
-      background: url(http://localhost:8081/img/profile_mask.d758fb4a.svg) center center/ 100% 100%;
+      background: url(assets/img/profile_mask.svg) center center/ 100% 100%;
       z-index: 1;
       content: "";
     }

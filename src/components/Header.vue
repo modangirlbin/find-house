@@ -31,7 +31,7 @@
       <span class="wrap_copy">
         <span class="copy">@bangbang</span>
       </span>
-      <button class="btn_close" v-on:click="$emit('closeSnb')">X</button>
+      <button class="btn_close" v-on:click="$emit('closeSnb')"><span class="offscreen">개인메뉴 닫기</span></button>
     </div>
     <div class="dimmed" v-if="sideState" v-on:click="$emit('closeSnb')"></div>
   </header>
