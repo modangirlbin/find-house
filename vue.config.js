@@ -10,5 +10,6 @@ module.exports = defineConfig({
             `
         }
     }
-  }
+  },
+  publicPath: '/find-house'
 })
