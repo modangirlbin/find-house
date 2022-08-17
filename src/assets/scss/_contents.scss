@@ -1,24 +1,32 @@
 .box_sort{
   padding-left: 15px;
+  background: #fff;
   .btn{
     display: inline-block;
     padding: 3px 8px;
-    margin: 9px 3px;
+    margin: 9px 3px 0;
     color: #ffa409;
     border: 2px solid #ffa409;
     border-radius: 15px;
     font-weight: bold;
     font-size: 11px;
+    background: #fff;
   }
 }
 .list_cards{
-  padding: 0 18px;
   .card{
     position: relative;
+    margin-top: 5px;
+    padding: 14px 18px 0;
+    background: #fff;
+    &:first-child{
+      margin-top: 0;
+      padding-top: 9px;
+    }
     &.sale .tit_card::after{
       position: absolute;
-      top: 10px;
-      left: 11px;
+      top: 22px;
+      left: 25px;
       padding: 1px 9px 2px;
       font-size: 13px;
       border-radius: 8px;
@@ -41,7 +49,7 @@
   }
 }
 .info_card{
-  padding: 10px 0 20px;
+  padding: 10px 0;
   .tit_card{
     font-size: 16px;
     color: #433;

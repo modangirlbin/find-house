@@ -7,6 +7,7 @@
     />
   <div class="box_sort">
     <button type="button" class="btn" v-on:click="sortPrice()">낮은 가격순</button>
+    <!-- <button type="button" class="btn" v-on:click="sortPrice($event)">낮은 가격순</button> -->
     <button type="button" class="btn" v-on:click="sortPriceReverse()">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
