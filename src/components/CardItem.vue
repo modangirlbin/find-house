@@ -2,7 +2,7 @@
   <li class="card">
     <a href="#none" v-on:click="openLayer()">
       <div class="img_card">
-        <img :src="item.image" class="img">
+        <img :src="item.image" class="img" :alt="item.title">
       </div>
       <div class="info_card">
         <h3 class="tit_card">{{item.title}}</h3>

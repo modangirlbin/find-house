@@ -1,18 +1,17 @@
 <template>
   <header class="header">
-    <div class="header_nav">
+    <div class="nav_header">
       <a href="#none" class="logo_main">
         <h1 class="offscreen">방방</h1>
       </a>
-      <a href="#none" class="btn_gift"><span class="offscreen">찜</span></a>
-      <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"><span class="offscreen">사이드 메뉴 열기</span></button>
+      <a href="#none" class="btn_gift"><span class="offscreen">선물함</span></a>
+      <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"  :aria-haspopup="sideState" :aria-expanded="sideState" aria-controls='gnb'><span class="offscreen">마이페이지 메뉴</span></button>
     </div>
     <nav class="gnb">
       <h2 class="offscreen">방방 메인 메뉴</h2>
-      <a v-for="(item, i) in gnb" :key="i">{{item}}</a>
+      <a href="#none" v-for="(item, i) in gnb" :key="i">{{item}}</a>
     </nav>
     <div class="wrap_snb" v-if="sideState">
-      <h2 class="offscreen">개인메뉴</h2>
       <div class="profile">
         <span class="thumb">
           <img src="@/assets/img/profile.jpg" alt="" />
@@ -22,6 +21,7 @@
           <span class="txt_email">inarainbow@naver.com</span>
         </span>
       </div>
+      <h2 class="offscreen">개인메뉴</h2>
       <ul class="snb">
         <li><a href="#none">나의 활동</a></li>
         <li><a href="#none">개인정보 수정</a></li>

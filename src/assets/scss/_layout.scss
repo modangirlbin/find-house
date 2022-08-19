@@ -12,13 +12,13 @@
       background-color: rgba(0,0,0,0.7);
     }
   }
-}
-.header_nav{
-  display: flex;
-  height: 72px;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
+  .nav_header{
+    display: flex;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+  }
   .logo_main{
     height: 50px;
     width: 112px;
@@ -38,6 +38,15 @@
     margin-right: 5px;
     margin-left: auto;
     background: url(assets/img/btn_gift.svg) no-repeat center center;
+  }
+  /* gnb */
+  .gnb{
+    background: #ffa409;
+    padding: 15px;
+  }
+  .gnb a{
+    color: #fff;
+    padding: 10px;
   }
 }
 .dimmed{
@@ -128,16 +137,4 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-}
-
-/* gnb */
-#app {
-}
-.gnb{
-  background: #ffa409;
-  padding: 15px;
-}
-.gnb a{
-  color: #fff;
-  padding: 10px;
 }

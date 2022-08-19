@@ -6,9 +6,9 @@
     :sideState="sideState" 
     />
   <div class="box_sort">
-    <button type="button" class="btn" v-on:click="sortPrice()">낮은 가격순</button>
+    <button type="button" class="btn" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortPrice($event)">낮은 가격순</button> -->
-    <button type="button" class="btn" v-on:click="sortPriceReverse()">높은 가격순</button>
+    <button type="button" class="btn" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
   <ul class="list_cards">
@@ -45,6 +45,8 @@ export default {
       like : [0, 0, 0],
       modalState : false,
       sideState : false,
+      sortState : false,
+      sortReverseState : false,
       selectedId : 0
     }
   },
@@ -56,11 +58,13 @@ export default {
       this.datas.sort(function(a,b){
         return a.price - b.price;
       });
+      this.sortState = true;
     },
     sortPriceReverse(){
       this.datas.sort(function(a,b){
         return b.price - a.price;
       });
+      this.sortState = false;
       console.log(this.datas, this.selectedId)
     },
     openSide(){
