@@ -2,7 +2,7 @@
   <header class="header">
     <div class="nav_header">
       <a href="#none" class="logo_main">
-        <h1 class="offscreen">방방</h1>
+        <h1 class="offscreen">방방 홈</h1>
       </a>
       <a href="#none" class="btn_gift"><span class="offscreen">선물함</span></a>
       <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"  :aria-haspopup="sideState" :aria-expanded="sideState" aria-controls='gnb'><span class="offscreen">마이페이지 메뉴</span></button>

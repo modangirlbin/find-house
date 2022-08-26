@@ -20,7 +20,7 @@
         </div>
       </div>
       <button type="button" class="btn_close" v-on:click="$emit('closeLayer')">닫기</button>
-      <a href="#" class="pop_loop" v-on:focus="popLoop">포커스이동</a>
+      <!-- <a href="#" class="pop_loop" v-on:focus="popLoop">포커스이동</a> -->
     </dialog>
   </div> 
 </template>
