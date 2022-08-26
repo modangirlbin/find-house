@@ -18,7 +18,7 @@
       :data = "datas"
       :class= "{'sale': datas[i].sale}"
       v-for = "(item, i) in datas" 
-      @openLayer = "modalState = true; selectedId = $event"
+      @openLayer = "openLayer"
     />
   </ul>
   <ModalLayer 
@@ -26,6 +26,7 @@
     :selectedId = "selectedId" 
     :modalState = "modalState" 
     @closeLayer = "modalState = false"
+    
   />
 </template>
 
@@ -67,8 +68,9 @@ export default {
       this.sortState = false;
       console.log(this.datas, this.selectedId)
     },
-    openSide(){
-      
+    openLayer(){
+      this.modalState = true;
+      // this.$refs.modalFocus.focus();
     }
     // sortName(){
     //   this.datas.sort(function(a,b){

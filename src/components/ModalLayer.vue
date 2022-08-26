@@ -2,7 +2,7 @@
    <div class="wrap_layer" v-if="modalState">
     <dialog class="layer" aria-modal="true" open="">
       <header class="layer_head">
-        <h2 class="tit_layer">{{datas[selectedId].title}}</h2>
+        <h2 class="tit_layer" tabindex="0" ref="title">{{datas[selectedId].title}}</h2>
       </header>
       <div class="layer_body">
         <div class="img_card">
@@ -20,6 +20,7 @@
         </div>
       </div>
       <button type="button" class="btn_close" v-on:click="$emit('closeLayer')">닫기</button>
+      <a href="#" class="pop_loop" v-on:focus="popLoop">포커스이동</a>
     </dialog>
   </div> 
 </template>
@@ -37,6 +38,11 @@ export default {
     selectedId : Number,
     modalState : Boolean,
     idx : Number
+  },
+  methods : {
+    popLoop : function(){
+      this.$refs.title.focus();
+   }
   }
 }
 </script>
