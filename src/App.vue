@@ -4,14 +4,15 @@
     @openSnb = "sideState = true"
     :class = "{'open' :sideState}"
     :sideState="sideState" 
+    :aria-hidden="modalState||sideState"
     />
-  <div class="box_sort">
+  <div class="box_sort" :aria-hidden="modalState||sideState">
     <button type="button" class="btn" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortPrice($event)">낮은 가격순</button> -->
     <button type="button" class="btn" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
-  <ul class="list_cards">
+  <ul class="list_cards" :aria-hidden="modalState||sideState">
     <CardItem 
       :item = "datas[i]"
       :key  = "item" 
