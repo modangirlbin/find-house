@@ -7,10 +7,6 @@
       <a href="#none" class="btn_gift"><span class="offscreen">선물함</span></a>
       <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"  :aria-haspopup="sideState" :aria-expanded="sideState" aria-controls='gnb'><span class="offscreen">마이페이지 메뉴</span></button>
     </div>
-    <nav class="gnb">
-      <h2 class="offscreen">방방 메인 메뉴</h2>
-      <a href="#none" v-for="(item, i) in gnb" :key="i">{{item}}</a>
-    </nav>
     <div class="wrap_snb" v-if="sideState">
       <div class="profile">
         <span class="thumb">
@@ -33,6 +29,10 @@
       </span>
       <button class="btn_close" v-on:click="$emit('closeSnb')"><span class="offscreen">개인메뉴 닫기</span></button>
     </div>
+    <nav class="gnb">
+      <h2 class="offscreen">메인 메뉴</h2>
+      <a href="#none" v-for="(item, i) in gnb" :key="i">{{item}}</a>
+    </nav>
     <div class="dimmed" v-if="sideState" v-on:click="$emit('closeSnb')"></div>
   </header>
 </template>
