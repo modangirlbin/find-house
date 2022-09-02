@@ -3,8 +3,7 @@
     @closeSnb = "sideState = false" 
     @openSnb = "sideState = true"
     :class = "{'open' :sideState}"
-    :sideState="sideState" 
-    :aria-hidden="modalState||sideState"
+    :sideState="sideState"
     />
   <div class="box_sort" :aria-hidden="modalState||sideState">
     <button type="button" class="btn" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
