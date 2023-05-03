@@ -8,7 +8,6 @@
     />
   <div class="box_sort" :aria-hidden="modalState||sideState">
     <button type="button" class="btn" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
-    <!-- <button type="button" class="btn" v-on:click="sortPrice($event)">낮은 가격순</button> -->
     <button type="button" class="btn" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
@@ -27,7 +26,6 @@
     :selectedId = "selectedId" 
     :modalState = "modalState" 
     @closeLayer = "modalState = false"
-    
   />
 </template>
 
@@ -69,8 +67,9 @@ export default {
       this.sortState = false;
       console.log(this.datas, this.selectedId)
     },
-    openLayer(){
+    openLayer(idx){
       this.modalState = true;
+      this.selectedId = idx;
       // this.$refs.modalFocus.focus();
     }
     // sortName(){
