@@ -7,8 +7,8 @@
     :aria-hidden="modalState"
     />
   <div class="box_sort" :aria-hidden="modalState||sideState">
-    <button type="button" class="btn" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
-    <button type="button" class="btn" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
+    <button type="button" class="btn" :class="sortState ? 'on' : ''" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
+    <button type="button" class="btn" :class="sortReverseState ? 'on' : ''" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
   <ul class="list_cards" :aria-hidden="modalState||sideState">
@@ -59,12 +59,14 @@ export default {
         return a.price - b.price;
       });
       this.sortState = true;
+      this.sortReverseState = false;
     },
     sortPriceReverse(){
       this.datas.sort(function(a,b){
         return b.price - a.price;
       });
       this.sortState = false;
+      this.sortReverseState = true;
       console.log(this.datas, this.selectedId)
     },
     openLayer(idx){
@@ -87,5 +89,5 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "@/assets/scss/popup.scss";
+  @import "@/assets/scss/popup.scss";
 </style>

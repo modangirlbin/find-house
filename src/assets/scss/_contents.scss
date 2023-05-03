@@ -11,6 +11,11 @@
     font-weight: bold;
     font-size: 11px;
     background: #fff;
+    &.on{
+      color: #fff;
+      background: #ffa409;
+
+    }
   }
 }
 .list_cards{
