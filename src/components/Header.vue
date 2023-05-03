@@ -17,13 +17,15 @@
           <span class="txt_email">inarainbow@naver.com</span>
         </span>
       </div>
-      <h2 class="offscreen">개인메뉴</h2>
-      <ul class="snb">
-        <li><a href="#none">나의 활동</a></li>
-        <li><a href="#none">개인정보 수정</a></li>
-        <li><a href="#none">개인정보 이용내역</a></li>
-        <li><a href="#none">설정</a></li>
-      </ul>
+      <nav>
+        <h2 class="offscreen">개인메뉴</h2>
+        <ul class="snb">
+          <li><a href="#none">나의 활동</a></li>
+          <li><a href="#none">개인정보 수정</a></li>
+          <li><a href="#none">개인정보 이용내역</a></li>
+          <li><a href="#none">설정</a></li>
+        </ul>
+      </nav>
       <span class="wrap_copy">
         <span class="copy">@bangbang</span>
       </span>
