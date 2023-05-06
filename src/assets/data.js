@@ -9,7 +9,7 @@ export default [{
   },
   {
     id : 1,
-    title: '신내 4단지 411동',
+    title: '신내4단지 411동',
     image: require('@/assets/img/room_01.jpg'),
     feature: '1070세대/총 12동/1996.06.14/54.07㎡ ~ 81.09㎡',
     desc: '평수좋은 소형아파트.실입주및투자가능',
