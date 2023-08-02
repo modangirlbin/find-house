@@ -31,10 +31,6 @@
       </span>
       <button class="btn_close" v-on:click="$emit('closeSnb')"><span class="offscreen">개인메뉴 닫기</span></button>
     </div>
-    <nav class="gnb" :aria-hidden="sideState">
-      <h2 class="offscreen">메인 메뉴</h2>
-      <a href="#none" v-for="(item, i) in gnb" :key="i">{{item}}</a>
-    </nav>
     <div class="dimmed" v-if="sideState" v-on:click="$emit('closeSnb')"></div>
   </header>
 </template>
@@ -42,11 +38,6 @@
 <script>
 export default {
   name: 'Header',
-  data(){
-    return{
-      gnb : ['home', 'shop', 'about'],
-    }
-  },
   props : {
     sideState : Boolean
   },

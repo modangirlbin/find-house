@@ -2,6 +2,7 @@
 /********************************************
  _layout.scss 
  *******************************************/
+
 /* header nav */
 .header{
   &.open{
@@ -38,15 +39,6 @@
     margin-right: 5px;
     margin-left: auto;
     background: url(assets/img/btn_gift.svg) no-repeat center center;
-  }
-  /* gnb */
-  .gnb{
-    background: #ffa409;
-    padding: 15px;
-  }
-  .gnb a{
-    color: #fff;
-    padding: 10px;
   }
 }
 .dimmed{
@@ -137,4 +129,19 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+}
+/* gnb */
+.gnb{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.list_gnb{
+  display: flex;
+  padding: 15px;
+  background: #ffa409;
+}
+.list_gnb .item_gnb{
+  padding: 10px;
+  color: #fff;
 }

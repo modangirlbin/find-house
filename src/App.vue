@@ -6,6 +6,11 @@
     :sideState="sideState" 
     :aria-hidden="modalState"
     />
+  <nav class="gnb">
+    <ul class="list_gnb">
+      <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="item_gnb">{{item}}</a></li>
+    </ul>
+  </nav>
   <div class="box_sort" :aria-hidden="modalState||sideState">
     <button type="button" class="btn" :class="sortState ? 'on' : ''" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
     <button type="button" class="btn" :class="sortReverseState ? 'on' : ''" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
@@ -42,6 +47,7 @@ export default {
     return{
       datas : data,
       menu : ['home', 'shop', 'about'],
+      gnb : ['home', 'shop', 'about'],
       like : [0, 0, 0],
       modalState : false,
       sideState : false,
