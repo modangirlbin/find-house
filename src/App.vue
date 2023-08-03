@@ -7,6 +7,7 @@
     :aria-hidden="modalState"
   />
   <nav class="gnb">
+    <h2 class="offscreen">주 메뉴</h2>
     <ul class="list_gnb">
       <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="item_gnb">{{item}}</a></li>
     </ul>
