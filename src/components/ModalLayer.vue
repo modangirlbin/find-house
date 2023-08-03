@@ -1,6 +1,6 @@
 <template>
-   <div class="wrap_layer" v-if="modalState">
-    <dialog class="layer" aria-modal="true" open="">
+   <div class="wrap_layer" v-if="modalState" v-on:click="outModal($event)">
+    <dialog class="layer" aria-modal="true" open="" @blur="$emit('closeLayer')">
       <header class="layer_head">
         <h2 class="tit_layer" ref="title">{{datas[selectedId].title}}</h2>
       </header>
@@ -42,6 +42,12 @@ export default {
   methods : {
     popLoop : function(){
       this.$refs.title.focus();
+   },
+   outModal : function(event){
+     console.log(event.target);
+     if(event.target.classList.contains('wrap_layer')){
+       this.$emit('closeLayer');
+     }
    }
   }
 }

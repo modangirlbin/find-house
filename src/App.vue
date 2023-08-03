@@ -5,7 +5,7 @@
     :class = "{'open' :sideState}"
     :sideState="sideState" 
     :aria-hidden="modalState"
-    />
+  />
   <nav class="gnb">
     <ul class="list_gnb">
       <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="item_gnb">{{item}}</a></li>
