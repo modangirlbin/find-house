@@ -60,20 +60,7 @@
   background: #fff;
   z-index: 101;
   transition: right 2s;
-  .snb{
-    margin-top: 9px;
-    padding: 13px 15px;
-    border-top: 1px solid rgba(0,0,0,.04);
-    li a{
-      display: block;
-      padding: 12px 10px;
-      font-size: 14px;
-      color: #333;
-      font-weight: 400;
-      border-bottom: 1px solid #eff1f4;
-    }
-  }
-  .wrap_copy{
+  .area_copy{
     position: absolute;
     bottom: 0;
     height: 50px;
@@ -83,6 +70,19 @@
     text-align: right;
     background: #f7f7f7;
     box-sizing: border-box;
+  }
+  .list_snb{
+    margin-top: 9px;
+    padding: 13px 15px;
+    border-top: 1px solid rgba(0,0,0,.04);
+    .link_snb{
+      display: block;
+      padding: 12px 10px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 400;
+      border-bottom: 1px solid #eff1f4;
+    }
   }
   .copy{
     font-size: 12px;
@@ -97,12 +97,12 @@
     background: url(assets/img/btn_close.svg) no-repeat center center/ 10px;
   }
 }
-.profile{
+.area_profile{
   display: flex;
   padding: 12px 20px;
   align-items: center;
   -webkit-box-align: center;
-  .thumb{
+  .thumb_profile{
     position: relative;
     width: 75px;
     height: 75px;
@@ -118,7 +118,7 @@
       content: "";
     }
   }
-  .info{
+  .info_profile{
     padding-left: 12px;
   }
   .txt_email{
@@ -138,10 +138,14 @@
 }
 .list_gnb{
   display: flex;
-  padding: 15px;
+  padding: 0 8px;
   background: #ffa409;
 }
-.list_gnb .item_gnb{
-  padding: 10px;
+
+.list_gnb .link_gnb{
+  display: block;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
   color: #fff;
 }

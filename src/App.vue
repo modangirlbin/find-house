@@ -9,7 +9,7 @@
   <nav class="gnb">
     <h2 class="offscreen">주 메뉴</h2>
     <ul class="list_gnb">
-      <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="item_gnb">{{item}}</a></li>
+      <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="link_gnb">{{item}}</a></li>
     </ul>
   </nav>
   <div class="box_sort" :aria-hidden="modalState||sideState">
@@ -96,5 +96,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "@/assets/scss/popup.scss";
+  @import "@/assets/scss/import.scss";
 </style>

@@ -18,8 +18,8 @@
             <dd class="txt_price">{{datas[selectedId].price}}만원{{idx}}</dd>
           </dl>
         </div>
+        <button type="button" class="btn_close" v-on:click="$emit('closeLayer')">닫기</button>
       </div>
-      <button type="button" class="btn_close" v-on:click="$emit('closeLayer')">닫기</button>
       <!-- <a href="#" class="pop_loop" v-on:focus="popLoop">포커스이동</a> -->
     </dialog>
   </div> 

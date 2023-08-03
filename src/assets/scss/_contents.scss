@@ -1,3 +1,6 @@
+/********************************************
+ _conentents.scss 
+ *******************************************/
 .box_sort{
   padding-left: 15px;
   background: #fff;
@@ -52,9 +55,11 @@
       transform: translate(-50%,-50%);
     }
   }
+  .info_card{
+    padding: 10px 0;
+  }
 }
 .info_card{
-  padding: 10px 0;
   .tit_card{
     font-size: 16px;
     color: #433;
