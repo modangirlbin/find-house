@@ -1,13 +1,15 @@
 <template>
   <header class="header">
-    <div class="nav_header" :aria-hidden="sideState">
-      <a href="#none" class="logo_main">
-        <h1 class="offscreen">방방 홈</h1>
-      </a>
+    <div class="nav_header">
+      <h1 class="logo_main">
+        <a href="#none" class="link_home">
+          <span class="offscreen">방방 홈</span>      
+        </a>
+      </h1>
       <a href="#none" class="btn_gift"><span class="offscreen">선물함</span></a>
-      <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"  :aria-haspopup="sideState" :aria-expanded="sideState" aria-controls='gnb'><span class="offscreen">마이페이지 메뉴</span></button>
+      <button type="button" class="btn_menu" v-on:click="$emit('openSnb')"  :aria-haspopup="sideState" :aria-expanded="sideState" aria-controls="wrap_snb"><span class="offscreen">마이페이지 메뉴</span></button>
     </div>
-    <div class="wrap_snb" v-if="sideState">
+    <div id="wrap_snb" class="wrap_snb" v-if="sideState">
       <div class="area_profile">
         <span class="thumb_profile">
           <img src="@/assets/img/profile.jpg" alt="" />

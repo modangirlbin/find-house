@@ -18,6 +18,7 @@
     top: 50%;
     left: 50%;
     width: calc(100vw - 30px);
+    padding-bottom: 30px;
     box-sizing: border-box;
     border-radius: 16px;
     background: #fff;
@@ -42,7 +43,7 @@
   }
 }
 .layer_body{
-  padding: 18px 18px 30px;
+  padding: 18px 18px 0;
   .txt_cont{
     font-size: 16px;
   }

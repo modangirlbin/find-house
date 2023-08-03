@@ -1,13 +1,14 @@
 /********************************************
  _conentents.scss 
  *******************************************/
-.box_sort{
+.area_sort{
+  display: flex;
+  gap: 3px;
+  padding-top: 9px;
   padding-left: 15px;
   background: #fff;
   .btn{
-    display: inline-block;
     padding: 3px 8px;
-    margin: 9px 3px 0;
     color: #ffa409;
     border: 2px solid #ffa409;
     border-radius: 15px;
@@ -23,7 +24,6 @@
 }
 .list_cards{
   .card{
-    position: relative;
     margin-top: 5px;
     padding: 14px 18px 0;
     background: #fff;
@@ -33,14 +33,17 @@
     }
     &.sale .tit_card::after{
       position: absolute;
-      top: 22px;
-      left: 25px;
+      top: 10px;
+      left: 10px;
       padding: 1px 9px 2px;
       font-size: 13px;
       border-radius: 8px;
       color: #fff;
       background: #ffa409;
       content: "급매";
+    }
+    a{
+      position: relative;
     }
   }
   .img_card{

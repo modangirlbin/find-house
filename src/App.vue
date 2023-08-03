@@ -6,27 +6,30 @@
     :sideState="sideState" 
     :aria-hidden="modalState"
   />
-  <nav class="gnb">
+  <nav class="gnb" :aria-hidden="modalState||sideState">
     <h2 class="offscreen">주 메뉴</h2>
     <ul class="list_gnb">
       <li v-for="(item, i) in gnb" :key="i"><a href="#none" class="link_gnb">{{item}}</a></li>
     </ul>
   </nav>
-  <div class="box_sort" :aria-hidden="modalState||sideState">
+  <div class="area_sort" :aria-hidden="modalState||sideState">
     <button type="button" class="btn" :class="sortState ? 'on' : ''" v-on:click="sortPrice()" :aria-pressed="sortState">낮은 가격순</button>
     <button type="button" class="btn" :class="sortReverseState ? 'on' : ''" v-on:click="sortPriceReverse()" :aria-pressed="!sortState">높은 가격순</button>
     <!-- <button type="button" class="btn" v-on:click="sortName()">이름순</button> -->
   </div>
-  <ul class="list_cards" :aria-hidden="modalState||sideState">
-    <CardItem 
-      :item = "datas[i]"
-      :key  = "item" 
-      :data = "datas"
-      :class= "{'sale': datas[i].sale}"
-      v-for = "(item, i) in datas" 
-      @openLayer = "openLayer"
-    />
-  </ul>
+  <main id="main" :aria-hidden="modalState||sideState">
+    <h2 class="offscreen">매물 목록</h2>
+    <ul class="list_cards">
+      <CardItem 
+        :item = "datas[i]"
+        :key  = "item" 
+        :data = "datas"
+        :class= "{'sale': datas[i].sale}"
+        v-for = "(item, i) in datas" 
+        @openLayer = "openLayer"
+      />
+    </ul>
+  </main>
   <ModalLayer 
     :datas = "datas" 
     :selectedId = "selectedId" 
