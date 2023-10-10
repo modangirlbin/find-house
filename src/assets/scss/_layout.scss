@@ -26,7 +26,6 @@ body{
     display: flex;
     height: 72px;
     align-items: center;
-    justify-content: space-between;
     background: #fff;
   }
   .link_home{
@@ -146,12 +145,12 @@ body{
   position: sticky;
   top: 0;
   z-index: 1;
-}
-.list_gnb{
-  display: flex;
-  gap: 5px;
-  padding: 0 8px;
-  background: #ffa409;
+  .list_gnb{
+    display: flex;
+    gap: 5px;
+    padding: 0 8px;
+    background: #ffa409;
+  }
 }
 
 .list_gnb .link_gnb{
@@ -184,9 +183,6 @@ body{
 .footer{
   padding: 40px 18px 30px;
   font-size: 12px;
-  .copyright{
-
-  }
   .policy{
     display: block;
     margin-top: 6px;

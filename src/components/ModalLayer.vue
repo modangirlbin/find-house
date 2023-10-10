@@ -1,5 +1,5 @@
 <template>
-   <div class="wrap_layer" v-if="modalState" v-on:click="outModal($event)">
+   <div class="layer_backdrop" v-if="modalState" v-on:click="outModal($event)">
     <dialog class="layer" aria-modal="true" open="" @blur="$emit('closeLayer')">
       <article>
         <header class="layer_head">

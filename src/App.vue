@@ -26,8 +26,8 @@
       </ul>
     </div>
   </main>
-  <button type="button" :class="['btn_top', {go_top: isTop}]" @click="scrollToTop()"><span class="offscreen">처음으로</span></button>
-  <footer class="footer">
+  <button type="button" :class="['btn_top', {go_top: isTop}]" @click="scrollToTop()" :aria-hidden="modalState||sideState"><span class="offscreen">처음으로</span></button>
+  <footer class="footer" :aria-hidden="modalState||sideState">
     <p class="copyright">© BANGBANB Co.,Ltd. All Rights Reserved.</p>
     <a class="policy" href="#none">개인정보 처리방침</a>
     <p class="caution">일부 상품의 경우 주식회사 방방 통신판매의 당사자가 아닌 통신판매중개자로서 매물, 매물정보, 거래에 대한 책임이 제한될 수 있으므로, 각 매물 페이지에서 구체적인 내용을 확인하시기 바랍니다.</p>
